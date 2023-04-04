@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Soil Erosion Information</title>
+    <style>
+      #header {
+        background-image: linear-gradient(
+          90deg,
+          rgb(174, 174, 120),
+          white,
+          rgb(205, 255, 192)
+        );
+        /* background-color: black; */
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        text-align: center;
+      }
+
+      #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #navbar {
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+      }
+
+      #navbar {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 100;
+        color: rgb(186, 236, 242);
+        transition: 0.3s ease;
+      }
+      body {
+        background-image: linear-gradient(
+          90deg,
+          rgb(205, 255, 192),
+          white,
+          rgb(174, 174, 120)
+        );
+      }
+      header {
+        min-height: 100vh;
+        position: relative;
+        display: grid;
+        place-items: center;
+      }
+      .video-container {
+        position: absolute;
+        top: 10;
+        left: 10;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -2;
+        /* border-radius: 50px; */
+      }
+      /* Style for header */
+      /* header {
+        background-color: #003366;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px;
+        font-size: 32px;
+        font-weight: bold;
+      } */
+
+      /* Style for main content */
+      main {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Style for images */
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        color: white;
+        font-size: 200px;
+        /* padding-top: %; */
+      }
+      p {
+        font-size: 30px;
+      }
+      li {
+        font-size: 20px;
+      }
+
+      #bod {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        /* background-color: #000000; */
+      }
+      .box {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        transform-style: preserve-3d;
+        animation: animate 20s linear infinite;
+      }
+
+      @keyframes animate {
+        0% {
+          transform: perspective(1000px) rotateY(0deg);
+        }
+        100% {
+          transform: perspective(1000px) rotateY(360deg);
+        }
+      }
+
+      .box span {
+        border: 1px solid white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+        /* -webkit-box-reflect: below 5px */
+        /* linear-gradient(transparent, transparent, #0004); */
+      }
+
+      .box span img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /* Style for footer */
+      footer {
+        background-color: #003366;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+        font-size: 16px;
+      }
+    </style>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <div id="header">
+      <ul id="navbar">
+        <!-- <h1>Soil Erosion</h1> -->
+        <img
+          src="Soil-removebg-preview.png"
+          style="height: 100px"
+          alt=""
+          srcset=""
+        />
+      </ul>
+    </div>
+    <header>
+      <video controls muted autoplay loop class="video-container">
+        <source src="./Soil.mp4" type="video/mp4" />
+      </video>
+      <!-- <h2>Soil Erosion</h2> -->
+      <!-- video switch -->
+    </header>
+    <!-- <header>Soil Erosion Information</header> -->
+    <main>
+      <h1>What is Soil Erosion?</h1>
+      <p>
+        Soil erosion is the process by which soil is removed or displaced by
+        natural forces, such as wind and water, or by human activities, such as
+        agriculture and construction.
+      </p>
+      <img src="soil-erosion-main.jpg.webp" alt="Soil Erosion" />
+      <h1>Types of Soil Erosion</h1>
+      <p>There are several types of soil erosion, including:</p>
+      <ul>
+        <li>Sheet erosion</li>
+        <li>Rill erosion</li>
+        <li>Gully erosion</li>
+        <li>Wind erosion</li>
+        <li>Water erosion</li>
+      </ul>
+      <img src="soil-erosion-on-a-hill.jpg.webp" alt="Types of Soil Erosion" />
+      <h1>Causes of Soil Erosion</h1>
+      <p>The main causes of soil erosion include:</p>
+      <ul>
+        <li>Poor land management practices</li>
+        <li>Deforestation</li>
+        <li>Overgrazing</li>
+        <li>Construction and development</li>
+        <li>Climate change</li>
+      </ul>
+      <img
+        src="soil-erosion-caused-by-heavy-rains.jpg.webp"
+        alt="Causes of Soil Erosion"
+      />
+      <h1>Effects of Soil Erosion</h1>
+      <p>Soil erosion can have several negative effects, such as:</p>
+      <ul>
+        <li>Reduced soil fertility</li>
+        <li>Loss of topsoil</li>
+        <li>Decreased crop yields</li>
+        <li>Increase in sedimentation in waterways</li>
+        <li>Damage to infrastructure</li>
+      </ul>
+      <img
+        src="soil-erosion-on-sandy-soil.jpg.webp"
+        alt="Effects of Soil Erosion"
+      />
+      <h1>Losses Of Topsoil</h1>
+      <p>
+        Topsoil is the richest earth’s layer with organic matter and nutrients,
+        so its removal by water or wind essentially worsens field fertility,
+        which is a critical effect of soil erosion on agricultural land.
+        Besides, rills or gullies significantly complicate the cultivation of
+        eroded lands.
+      </p>
+      <h1>Soil Acidification</h1>
+      <p>
+        A lack of organic matter may increase field acidity, which slows down
+        crop development and exposes farmlands to water and wind.
+      </p>
+      <img src="agriculture-rosion.jpg" alt="Effects of Soil Erosion" />
+      <h1>Solutions To Soil Erosion</h1>
+      <p>
+        Decision-making in soil erosion control depends on factors like the soil
+        type, topography, or climate specifics, and applied agricultural
+        practices like tillage system or crop rotation. It is important to
+        analyze the effectiveness of undertaken methods and adjust them for
+        individual fields.
+      </p>
+      <p>
+        Success starts with early problem detection and the choice of suitable
+        methods depending on its severity. For example, replanting, cover crops,
+        or mulching can be good ways to reduce soil erosion in the initial
+        stages because vegetation protects fields from destruction by water
+        run-offs, raindrops, and wind. In severe cases, the impact can be
+        mitigated with terrace farming or check dams.
+      </p>
+      <p>
+        Other soil erosion control measures include contour cropping and
+        planting perennials with strong root systems to fix the ground and slow
+        down water streams.
+      </p>
+      <section id="bod">
+        <div class="box">
+          <span style="--i: 1"><img src="1.jpeg" alt="" /></span>
+          <span style="--i: 2"><img src="2.jpeg" alt="" /></span>
+          <span style="--i: 3"><img src="3.jpeg" alt="" /></span>
+          <span style="--i: 4"><img src="4.jpeg" alt="" /></span>
+          <span style="--i: 5"><img src="5.jpeg" alt="" /></span>
+          <span style="--i: 6"><img src="6.jpeg" alt="" /></span>
+          <span style="--i: 7"><img src="7.jpeg" alt="" /></span>
+          <span style="--i: 8"><img src="8.jpeg" alt="" /></span>
+        </div>
+      </section>
+      <h1>How To Prevent Soil Erosion</h1>
+      <p>
+        It’s not that easy to reduce erosive processes and even more difficult
+        to stop them, this is why prevention is by far the best method of
+        control.
+      </p>
+      <h1>Produce Crops On Suitable Lands</h1>
+      <p>
+        Some terrains are extremely prone to erosive processes, so they can’t be
+        used for farming without certain preventive measures to mitigate the
+        risks. Besides, each field type requires specific management to protect
+        soil from erosion.
+      </p>
+      <h1>Practice Terracing And Contour Farming</h1>
+      <p>
+        Because erosion develops fast due to quick run-offs, terrace farming is
+        the only way to grow crops on steep hills. Contour farming decreases
+        soil erosion because plants absorb water and ridges stop it from
+        flowing, which mitigates the destruction risks. Plants with strong roots
+        also fix the land and prevent it from sliding down the slope.
+      </p>
+      <h1>Don’t Leave The Soil Bare</h1>
+      <p>
+        Field cover helps not only reduce but prevent field destruction. Over
+        30% ground cover for erosion control helps essentially mitigate the
+        risks. Complete cover can be practiced in most grazing and crop
+        production systems.
+      </p>
+      <img src="cover-cro.jpg" alt="Effects of Soil Erosion" />
+      <h1>Plant Vegetation</h1>
+      <p>
+        Planting crops help prevent soil erosion by ensuring continuous ground
+        cover, while leaving the field bare promotes erosive processes. Provide
+        soil cover in between the growing season with crop rotation and cover
+        crop practices. Besides, crop rotation reduces soil erosion by fixing
+        the land with alternatively planted deep-rooted crops. Additionally,
+        sequences of high vegetation protect fields from the wind.
+      </p>
+      <h1>Use Rotational Grazing</h1>
+      <p>
+        When livestock grazes in the same place for a long time, it eats up
+        nearly all vegetation. In turn, ground cover loss often provokes
+        erosion. This is why it is important to let the grazed areas regenerate
+        by moving the cattle to other pastures.
+      </p>
+      <img src="farming-lands.jpg" alt="Effects of Soil Erosion" />
+    </main>
+    <footer>&copy; 2023 Soil Erosion Information by Asif</footer>
+  </body>
+</html>
